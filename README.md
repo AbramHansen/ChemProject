@@ -1,6 +1,6 @@
 # Contributors:
-Abram Hansen
-Ben Painter
-Katie Blunck!
-Cameron Lybbert
-Ryan Madsen
+*Abram Hansen
+*Ben Painter
+*Cameron Lybbert
+*Ryan Madsen
+*Katie Blunck
