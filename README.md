@@ -1,5 +1,6 @@
-Project Created By:
-Abram Hansen
-Ben Painter
-Cameron Lybbert
-Anna Merrill
+# Contributors:
+* Abram Hansen
+* Ben Painter
+* Cameron Lybbert
+* Ryan Madsen
+* Katie Blunck
