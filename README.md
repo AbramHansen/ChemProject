@@ -1,5 +1,5 @@
 # Contributors:
-*Abram Hansen
-*Ben Painter
-*Cameron Lybbert
-*Ryan Madsen
+* Abram Hansen
+* Ben Painter
+* Cameron Lybbert
+* Ryan Madsen
