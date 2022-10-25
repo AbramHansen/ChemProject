@@ -28,6 +28,8 @@ main {
   background-color: #E1515D;
   border-style: solid;
   border-radius: 10px 10px 0px 0px;
+  max-height: 100px;
+  overflow:scroll;
 }
 
 #compounds {
@@ -71,3 +73,4 @@ main {
 footer{
   background-color: rgb(231, 164, 70);
 }
+
