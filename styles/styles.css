@@ -29,8 +29,8 @@ main {
   margin: 0px 10px;
   border-style: solid;
   border-radius: 10px 10px 0px 0px;
-  max-height: 100px;
-  overflow:scroll;
+  max-height: 100%;
+  overflow:auto;
 }
 
 #compounds {
@@ -77,3 +77,12 @@ footer{
   background-color: rgb(231, 164, 70);
 }
 
+.Element{
+  display:inline;
+  margin: 10px 0px;
+  padding: 40px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  height:100%;
+  position:inherit;
+}

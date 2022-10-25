@@ -63,13 +63,15 @@ async function loadElements() {
       let element = document.createElement("p");
       element.textContent = elements.name;
       element.classList.add("Element");
-    //   element.addEventListener("click", findElement);
+      element.addEventListener("click", findElement);
   
       elementsContainer.appendChild(element);
     });
   }
 
-
+function findElement(e){
+    console.log(e)
+}
 
 
 
