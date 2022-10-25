@@ -4,13 +4,86 @@ const ctx = canvas.getContext("2d");
 const CANVAS_WIDTH = canvas.width = 800;
 const CANVAS_HEIGHT = canvas.height = 600;
 
-class Electron {
-    constructor(shell) {
-        this.shell = shell;
+class Atom {
+    constructor(type, numValence) {
+        this.type = type;
+        this.numValence = numValence;
+        this.bonds = [];
+        this.x = 0;
+        this.y = 0;
+
+        this.shellMax = 8;
+        if(this.type == "H" || this.type == "He"){
+            this.shellMax = 2;
+        }
+    }
+    checkForBonds(atoms) {
+        console.log("level 0");
+
+        var numNeeded = this.shellMax - this.numValence + this.bonds.length;
+
+        if(numNeeded > 0) {    //tests if we need bonds in the first place     
+            console.log("level 1");
+            for(var atom of atoms) {
+                console.log("level 3");
+                if(!(atom.x == this.x && atom.y == this.y)) { //tests to makes sure it's not itself
+                    console.log("level 4");
+                    if (atom.x < this.x + 2 && atom.x > this.x - 2 && atom.y < this.y + 2 && atom.y > this.y - 2) { //check if next to the atom
+                        console.log("level 5");
+
+                        var atomNumNeeded = atom.shellMax - atom.numValence + atom.bonds.length;
+
+                        var bondsToCreate = 0;
+                        if (numNeeded < atomNumNeeded) {
+                            bondsToCreate = numNeeded;
+                        } else {
+                            bondsToCreate = atomNumNeeded;
+                        }
+
+                        if (bondsToCreate > 3) {
+                            bondsToCreate = 3;
+                        }
+
+                        for (let i = 0; i < bondsToCreate; i++) {
+                            console.log("level 6");
+                            this.bonds.push(atom);
+                            atom.bonds.push(this);
+                            console.log("Bond!");
+                            console.log(atom);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    draw(ctx) {
+        ctx.beginPath();
+
+        //draw nucleus
+        ctx.moveTo(this.x * 40, this.y * 40);
+        ctx.fillStyle = '#FF0000';
+        ctx.strokeStyle = "black";
+        ctx.arc(this.x * 40, this.y * 40, 10, 0, 2 * Math.PI, false);
+        ctx.fillStyle = '#FF0000';
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = '#000000';
+        ctx.fillText(this.type, this.x * 40 - 5, this.y * 40 + 5);
+
+        this.drawBonds(ctx)
+    }
+
+    drawBonds(ctx) {
+        for(var bond of this.bonds) {
+            ctx.moveTo(this.x * 40, this.y * 40);
+            ctx.lineTo(bond.x * 40, bond.y * 40);
+            ctx.stroke();
+        }
     }
 }
 
-class Atom {
+/*class Atom {
     constructor(type, x, y) {
         this.type = type;
         this.x = x;
@@ -57,14 +130,33 @@ class Atom {
         this.x += 0.1;
         this.y += 0.1;
     }
-}
+} */
 
-sodiumAtom = new Atom(11, 100, 100);
+var atoms = [new Atom("Na", 1), new Atom("O", 6), new Atom("N", 5), new Atom("He", 2), new Atom("N", 5)];
+
+atoms[0].x = 4;
+atoms[0].y = 4;
+atoms[1].x = 5;
+atoms[1].y = 4;
+atoms[2].x = 6;
+atoms[2].y = 4;
+atoms[3].x = 4;
+atoms[3].y = 5;
+atoms[4].x = 7;
+atoms[4].y = 5;
+
+for(var atom of atoms) {
+    atom.checkForBonds(atoms);
+}
 
 function animate() {
     ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    ctx.font = '12px serif';
 
-    sodiumAtom.draw(ctx);
+    for(var atom of atoms) {
+        atom.draw(ctx);
+    }
+
     requestAnimationFrame(animate);
 }
 
