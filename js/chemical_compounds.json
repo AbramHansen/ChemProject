@@ -1,0 +1,320 @@
+[
+  {
+    "chemicalFormula": "NaHCO3",
+    "commonName": "Baking Soda",
+    "uses": "It is used as an ingredient in baking.",
+    "compoundName": "Sodium Hydrogen Carbonate or Sodium bicarbonate"
+  },
+  {
+    "chemicalFormula": "NaOCI/NaClO",
+    "commonName": "Antiformin/ Bleach/ Chloride of Soda",
+    "uses": "It is used on a large scale for surface purification",
+    "compoundName": "Sodium hypochlorite"
+  },
+  {
+    "chemicalFormula": "CaOCl2",
+    "commonName": "Bleaching Powder",
+    "uses": "It is used as a bleaching agent and disinfectant.",
+    "compoundName": "Calcium Oxychloride"
+  },
+  {
+    "chemicalFormula": "CuSO4.xH2O",
+    "commonName": "Blue Vitriol",
+    "uses": "It is used to control",
+    "compoundName": "Copper Sulphate"
+  },
+  {
+    "chemicalFormula": "Na2[B4O5(OH)4].8H2O",
+    "commonName": "Borax",
+    "uses": "It is used in laundry detergent.",
+    "compoundName": "Sodium tetraborate decahydrate/ Sodium Borate"
+  },
+  {
+    "chemicalFormula": "Hg2CI2",
+    "commonName": "Calomel",
+    "uses": "It is used as a fungicide",
+    "compoundName": "Mercurous chloride"
+  },
+  {
+    "chemicalFormula": "C6H5OH",
+    "commonName": "Carbolic Acid/ Hydroxybenzene/ Phenic Acid",
+    "uses": "It is used as a disinfectant in household cleaners.",
+    "compoundName": "Phenol"
+  },
+  {
+    "chemicalFormula": "SiC",
+    "commonName": "Carborundum",
+    "uses": "It is used in automotive brakes and clutches.",
+    "compoundName": "Silicon carbide"
+  },
+  {
+    "chemicalFormula": "KOH",
+    "commonName": "Caustic potash",
+    "uses": "It is used in liquid fertilizers",
+    "compoundName": "Potassium hydroxide"
+  },
+  {
+    "chemicalFormula": "NaNO3",
+    "commonName": "Chile Saltpetre",
+    "uses": "It is used for making high-strength glauses",
+    "compoundName": "Sodium Nitrate"
+  },
+  {
+    "chemicalFormula": "CHCI3",
+    "commonName": "Chloroform",
+    "uses": "It is used as a solvent for lacquer",
+    "compoundName": "Trichloromethane"
+  },
+  {
+    "chemicalFormula": "KC4H5O6",
+    "commonName": "Cream of tartar",
+    "uses": "It is used in bakery to stabilize egg whites.",
+    "compoundName": "Potassium hydrogen tartrate/ potassium bitartrate"
+  },
+  {
+    "chemicalFormula": "CaMg(CO3)2",
+    "commonName": "Dolomite",
+    "uses": "It is used as an ingredient in the production of glass",
+    "compoundName": "Calcium magnesium carbonate"
+  },
+  {
+    "chemicalFormula": "CO2",
+    "commonName": "Dry Ice",
+    "uses": "It is used to preserve food.",
+    "compoundName": "Solid carbon dioxide"
+  },
+  {
+    "chemicalFormula": "MgSO4.7H2O",
+    "commonName": "Epsom salt",
+    "uses": "It is known to relieve pain and inflammation.",
+    "compoundName": "Magnesium sulphate heptahydrate"
+  },
+  {
+    "chemicalFormula": "CCl2F2",
+    "commonName": "Freon-12/CFC-12",
+    "uses": "It is used as a refrigerant in refrigerators and air conditioners.",
+    "compoundName": "Dichlorodifluoromethane"
+  },
+  {
+    "chemicalFormula": "PbS",
+    "commonName": "Galena",
+    "uses": "It is also used in a green glaze applied to pottery.",
+    "compoundName": "Lead (ll) sulphide"
+  },
+  {
+    "chemicalFormula": "Na2 SO4.10H2O",
+    "commonName": "Glauber\u2019s Salt",
+    "uses": "It is used in medicine and as a dyeing agent.",
+    "compoundName": "Sodium sulphate decahydrate"
+  },
+  {
+    "chemicalFormula": "2",
+    "commonName": "Glycerol",
+    "uses": "3-triol",
+    "compoundName": "Propane-1"
+  },
+  {
+    "chemicalFormula": "FeSO4.7H2O",
+    "commonName": "Green Vitriol",
+    "uses": "It is used in sewage and water treatment",
+    "compoundName": "Ferrous sulphate heptahydrate"
+  },
+  {
+    "chemicalFormula": "CaSO4.2H2O",
+    "commonName": "Gypsum",
+    "uses": "It is used to manufacture dry wall.",
+    "compoundName": "Calcium sulphate dihydrate"
+  },
+  {
+    "chemicalFormula": "D2O",
+    "commonName": "Heavy water",
+    "uses": "It is used in nuclear reactors",
+    "compoundName": "Deuterium Oxide"
+  },
+  {
+    "chemicalFormula": "Na2S2O3.5H2O",
+    "commonName": "Hypo Solution",
+    "uses": "It is used for both film and photographic paper processing.",
+    "compoundName": "Sodium Thiosulphate pentahydrate"
+  },
+  {
+    "chemicalFormula": "Fe2O3",
+    "commonName": "Hematite",
+    "uses": "It is used to produce pigments",
+    "compoundName": "Iron (lll) Oxide/ Ferric Oxide"
+  },
+  {
+    "chemicalFormula": "N2O",
+    "commonName": "Laughing gas",
+    "uses": "It is used by dentist.",
+    "compoundName": "Dinitrogen monoxide / Nitrous Oxide"
+  },
+  {
+    "chemicalFormula": "CaO",
+    "commonName": "Quick Lime/ Burnt Lime",
+    "uses": "It is used in production of iron and steel",
+    "compoundName": "Calcium Oxide"
+  },
+  {
+    "chemicalFormula": "Ca(OH)2",
+    "commonName": "Slaked Lime",
+    "uses": "It is used in mortars",
+    "compoundName": "Calcium Hydroxide"
+  },
+  {
+    "chemicalFormula": "CaCO3",
+    "commonName": "Limestone",
+    "uses": "It is used as a building material.",
+    "compoundName": "Calcium carbonate"
+  },
+  {
+    "chemicalFormula": "PbO",
+    "commonName": "Litharge(Red) and Massicot (Yellow)",
+    "uses": "It is used in the manufacture of Lead Stabilizers pottery",
+    "compoundName": "Lead (ll) Oxide/ Lead Monoxide"
+  },
+  {
+    "chemicalFormula": "NaOH",
+    "commonName": "Lye/ Caustic soda",
+    "uses": "It is used in manufacture of pulp and paper",
+    "compoundName": "Sodium hydroxide"
+  },
+  {
+    "chemicalFormula": "CH4",
+    "commonName": "Marsh Gas",
+    "uses": "It is poisonous gas mainly found in mines.",
+    "compoundName": "Methane"
+  },
+  {
+    "chemicalFormula": "C4H8O",
+    "commonName": "Methyl ethyl ketone/ Butanone",
+    "uses": "It is mainly used in paint formation.",
+    "compoundName": "Butan-2-one"
+  },
+  {
+    "chemicalFormula": "Mg(OH)2",
+    "commonName": "Milk of magnesia",
+    "uses": "It is used as an antacid to relieve indigestion",
+    "compoundName": "Magnesium hydroxide"
+  },
+  {
+    "chemicalFormula": "(NH4)2Fe(SO4)2 \u00b7 6H2O",
+    "commonName": "Mohr\u2019s Salt",
+    "uses": "It is used to increase the shelf life of iron and reduce oxidation.",
+    "compoundName": "Ammonium iron (II) sulphate"
+  },
+  {
+    "chemicalFormula": "HNO3",
+    "commonName": "Aqua Fortis/ Spirit of Niter",
+    "uses": "It is used for production of explosives",
+    "compoundName": "Nitric acid"
+  },
+  {
+    "chemicalFormula": "HCI",
+    "commonName": "Muriatic acid",
+    "uses": "It is used as a food additive",
+    "compoundName": "Hydrochloric acid"
+  },
+  {
+    "chemicalFormula": "H2SO4",
+    "commonName": "Oil of Vitriol",
+    "uses": "It is use for making fertilizer.",
+    "compoundName": "Sulphuric acid"
+  },
+  {
+    "chemicalFormula": "C8H8O3",
+    "commonName": "Wintergreen oil",
+    "uses": "It is used in traditional medicine for the",
+    "compoundName": "Methyl salicylate"
+  },
+  {
+    "chemicalFormula": "COCl2",
+    "commonName": "Phosgene",
+    "uses": "It is used to make plastics and pesticides.",
+    "compoundName": "Carbonyl dichloride"
+  },
+  {
+    "chemicalFormula": "CaSO4.1/2H2O",
+    "commonName": "Plaster of Paris",
+    "uses": "It is used as a protective coating on walls and ceilings.",
+    "compoundName": "Calcium sulphate hemihydrate"
+  },
+  {
+    "chemicalFormula": "<br>KAl(SO4)2\u00b712H2O",
+    "commonName": "Potash Alum/Potassium Alum",
+    "uses": "",
+    "compoundName": "Potassium aluminium sulphate dodecahydrate"
+  },
+  {
+    "chemicalFormula": "KNaC4H4O6.4H2O",
+    "commonName": "Rochelle Salt",
+    "uses": "It is used in manufacturing of pectins and gelatines.",
+    "compoundName": "Potassium sodium tartrate"
+  },
+  {
+    "chemicalFormula": "SiO2",
+    "commonName": "Quartz",
+    "uses": "It is used as oscillators in radios",
+    "compoundName": "Silicon dioxide (Silica)"
+  },
+  {
+    "chemicalFormula": "Hg",
+    "commonName": "QuickSilver",
+    "uses": "It is used in thermometers",
+    "compoundName": "Mercury"
+  },
+  {
+    "chemicalFormula": "NaCI",
+    "commonName": "Table Salt/Common Salt",
+    "uses": "It is commonly used as a condiment and food preservative.",
+    "compoundName": "Sodium chloride"
+  },
+  {
+    "chemicalFormula": "(CH3)2CHOH",
+    "commonName": "2-propanol/Propan-2-ol",
+    "uses": "It is used to treat tremors",
+    "compoundName": "Isopropyl alcohol"
+  },
+  {
+    "chemicalFormula": "NH4CI",
+    "commonName": "Sal ammoniac",
+    "uses": "It is used as cleaning agent in several industrial processes.",
+    "compoundName": "Ammonium chloride"
+  },
+  {
+    "chemicalFormula": "KNO3",
+    "commonName": "Saltpetre",
+    "uses": "It is used as a common food preservative.",
+    "compoundName": "Potassium nitrate"
+  },
+  {
+    "chemicalFormula": "Ca(OH)2",
+    "commonName": "Slaked Lime",
+    "uses": "It is used to form mortars",
+    "compoundName": "Calcium hydroxide"
+  },
+  {
+    "chemicalFormula": "C6H2(NO2)3CH3",
+    "commonName": "TNT",
+    "uses": "It is used in used in military shells",
+    "compoundName": "Trinitrotoluene"
+  },
+  {
+    "chemicalFormula": "HgS",
+    "commonName": "Vermilion/ Cinnabar",
+    "uses": "It is used as a pigment",
+    "compoundName": "Mercuric sulphide"
+  },
+  {
+    "chemicalFormula": "Na2CO3.10H2O",
+    "commonName": "Washing Soda",
+    "uses": "It is used in commercial detergent mixtures to treat hard water.",
+    "compoundName": "Sodium carbonate decahydrate"
+  },
+  {
+    "chemicalFormula": "ZnSO4.7H2O",
+    "commonName": "White Vitriol",
+    "uses": "It is used for preserving skins and wood.",
+    "compoundName": "Zinc Sulphate"
+  }
+]
