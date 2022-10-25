@@ -12,14 +12,15 @@ element1.addEventListener('click', (event => {
 
 
 
-    function getJSON() {
-        fetch("./elements.json")
-          .then((res) => {
-            return res.json();
-          })
-          .then((data) => console.log(data));
-        }
 
+
+// Fetches the Elements.json file
+function getJSON() {
+    fetch("./elements.json")
+    .then(response => response.json())
+    .then(json => console.log(json));
+}
+// Returns the JSON File
 let elementslist = getJSON();
 getJSON().elements.forEach(element => {
     let section = document.createElement('section');
