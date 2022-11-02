@@ -82,9 +82,19 @@ function appendElements(data) {
 async function findElement(e) {
   let elements = await getElements();
 
-  let element = elements.find(
-    (element) => element.name == e.target.textContent
-  );
+  console.log(e);
+
+  let text = "";
+
+  if (e.target.localName == "p") {
+    text = e.target.parentElement.children[3].textContent;
+    console.log(text);
+  } else {
+    text = e.target.children[3].textContent;
+    console.log(text);
+  }
+
+  let element = elements.find((element) => element.name == text);
 
   let infoContainer = document.getElementById("info");
 
