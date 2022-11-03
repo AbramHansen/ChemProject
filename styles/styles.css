@@ -91,6 +91,7 @@ footer {
 .element {
   width: 80px;
   min-width: 80px;
+  cursor: pointer;
   /* width: 100%; */
   display: grid;
   grid-template-columns: 1fr 1fr;
