@@ -28,6 +28,8 @@ We used Javascript combined with HTML and CSS.
 * [First Draft Wireframe](https://wireframe.cc/f51zs4)
 * [Final Wireframe](https://wireframe.cc/jxJ7qb)
 * [Source of API](https://pubchem.ncbi.nlm.nih.gov/)
+* [National Geographic](https://www.nationalgeographic.com/)
+* [Design Inspiration](https://www.minecraft.net/)
 
 # Future Work
 
