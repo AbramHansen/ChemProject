@@ -28,6 +28,7 @@ We used Javascript combined with HTML and CSS.
 * [Trello Board](https://trello.com/invite/b/C1aJ9Kuv/4b2be3d1dc7588c7ca4810c210b640b2/brain-matter-workspace)
 * [First Draft Wireframe](https://wireframe.cc/f51zs4)
 * [Final Wireframe](https://wireframe.cc/jxJ7qb)
+* [Source of API] (https://pubchem.ncbi.nlm.nih.gov/)
 
 # Future Work
 
