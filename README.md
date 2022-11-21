@@ -15,12 +15,13 @@ The IDE we used for this software was Visual Studio Code.
 We used Javascript combined with HTML and CSS.
 
 # Collaborators
-* Abram Hansen
-* Ben Painter
-* Cameron Lybbert
-* Ryan Madsen
-* Katie Blunck
-* Anna Merrill
+* Abram Hansen - Configuration Manager
+* Ben Painter - Quality Assurance
+* Cameron Lybbert - Project Manager
+* Ryan Madsen - Team Leader
+* Katie Blunck - Documentation Manager
+* Anna Merrill - Graphic Designer
+
 
 # Useful Websites
 
