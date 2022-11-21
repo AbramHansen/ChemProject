@@ -25,8 +25,9 @@ We used Javascript combined with HTML and CSS.
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Trello Board](https://trello.com/invite/b/C1aJ9Kuv/4b2be3d1dc7588c7ca4810c210b640b2/brain-matter-workspace)
+* [Our Wireframe](https://wireframe.cc/f51zs4)
+* [Final Project](https://wireframe.cc/jxJ7qb)
 
 # Future Work
 
