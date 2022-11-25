@@ -72,6 +72,15 @@ main{
     font-size: 18px;
 }
 
+#left-img{
+  grid-column: 2/3;
+  grid-row: 1/1;
+  margin: 50px;
+  padding: 10px;
+  align-self: center;
+  justify-self: center;
+}
+
 footer {
     background-color: #a7f594;
     text-align: center;
