@@ -98,7 +98,7 @@ async function getCompoundPNG(cid) {
   if (response.ok) {
     img = document.getElementById("compound-img");
     img.src = response.url;
-    img.style.borderRadius = "15px";
+    img.style.border = "solid 10px saddlebrown";
     img.style.boxShadow = "0px 0px 3px #999";
   } else {
     throw Error(await response.text());
