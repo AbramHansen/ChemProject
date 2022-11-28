@@ -38,15 +38,15 @@ header {
 main{
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr;
-    height: 750px;
+    grid-template-rows: 200px, 1fr, 1fr;
+    height: 800px;
 
 }
 
 #paragraph-right{
 
     grid-column: 1/2;
-    grid-row: 1/1;
+    grid-row: 2/2;
     margin: 0px 50px;
     padding: 10px;
     align-self: center;
@@ -60,7 +60,7 @@ main{
 
 #paragraph-left{
     grid-column: 2/3;
-    grid-row: 2/2;
+    grid-row: 3/3;
     margin: 50px;
     padding: 10px;
     align-self: center;
@@ -74,11 +74,19 @@ main{
 
 #left-img{
   grid-column: 2/3;
-  grid-row: 1/1;
+  grid-row: 2/2;
   margin: 50px;
   padding: 10px;
   align-self: center;
   justify-self: center;
+}
+main h1{
+  grid-column: 1/3;
+  grid-row: 1/1;
+  font-style: bold;
+  align-self: center;
+  justify-self: center;
+  font-size: 40px;
 }
 
 footer {
