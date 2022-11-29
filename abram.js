@@ -22,37 +22,29 @@ class Atom {
 
         var numNeeded = this.shellMax - this.numValence + this.bonds.length;
 
-        if(numNeeded > 0) {    //tests if we need bonds in the first place     
+        while(numNeeded > 0) {    //tests if we need bonds in the first place     
             console.log("level 1");
+            var bondMade = false;
             for(var atom of atoms) {
+                var atomNumNeeded = atom.shellMax - atom.numValence + atom.bonds.length;
                 console.log("level 3");
                 if(!(atom.x == this.x && atom.y == this.y)) { //tests to makes sure it's not itself
                     console.log("level 4");
                     if (atom.x < this.x + 2 && atom.x > this.x - 2 && atom.y < this.y + 2 && atom.y > this.y - 2) { //check if next to the atom
                         console.log("level 5");
-
-                        var atomNumNeeded = atom.shellMax - atom.numValence + atom.bonds.length;
-
-                        var bondsToCreate = 0;
-                        if (numNeeded < atomNumNeeded) {
-                            bondsToCreate = numNeeded;
-                        } else {
-                            bondsToCreate = atomNumNeeded;
-                        }
-
-                        if (bondsToCreate > 3) {
-                            bondsToCreate = 3;
-                        }
-
-                        for (let i = 0; i < bondsToCreate; i++) {
-                            console.log("level 6");
+                        if(atomNumNeeded > 0) {
+                            numNeeded--;
+                            atomNumNeeded--;
                             this.bonds.push(atom);
                             atom.bonds.push(this);
                             console.log("Bond!");
-                            console.log(atom);
+                            bondMade = true;
                         }
                     }
                 }
+            }
+            if(!bondMade){ //prevents and infinite loop if no bonds are being made
+                numNeeded = 0;
             }
         }
     }
@@ -71,6 +63,11 @@ class Atom {
         ctx.fillStyle = '#000000';
         ctx.fillText(this.type, this.x * 40 - 5, this.y * 40 + 5);
 
+        var top = 0;
+        var bottom = 0;
+        var left = 0;
+        var right = 0;
+
         this.drawBonds(ctx)
     }
 
@@ -79,6 +76,50 @@ class Atom {
             ctx.moveTo(this.x * 40, this.y * 40);
             ctx.lineTo(bond.x * 40, bond.y * 40);
             ctx.stroke();
+        }
+
+        var slots = [0,0,0,0]; //right, top, left, bottom
+
+        for(var bond of this.bonds) {
+            if (bond.x > this.x) {
+                slots[0] = 3;
+            } else if (bond.y > this.y) {
+                slots[1] = 3;
+            } else if (bond.x < this.x) {
+                slots[2] = 3;
+            } else if (bond.y > this.y) {
+                slots[3] = 3;
+            }
+        }
+
+        var remainingValenceElectrons = this.numValence - this.bonds.length;
+
+        console.log(remainingValenceElectrons);
+
+        while (remainingValenceElectrons > 0) {
+            for(var i = 0; i < slots.length; i++) {
+                if (remainingValenceElectrons > 0 && slots[i] != 3) {
+                    slots[i]++;
+                    remainingValenceElectrons--;
+                }
+            }
+        }
+
+        console.log(slots);
+
+        for(var slot of slots) {
+            var deg = 0;
+            if (slot == 1) {
+                ctx.moveTo(this.x * 40, this.y * 40);
+                ctx.fillStyle = '#FF0000';
+                ctx.strokeStyle = "black";
+                ctx.arc(this.x * 40 + Math.sin(deg) * 20, this.y * 40 + Math.cos(deg) * 20, 2, 0, 2 * Math.PI, false);
+                ctx.fillStyle = '#FF0000';
+                ctx.fill();
+            } else if (slot == 2) {
+
+            }
+            deg += Math.PI;
         }
     }
 }
@@ -132,6 +173,7 @@ class Atom {
     }
 } */
 
+
 var atoms = [new Atom("Na", 1), new Atom("O", 6), new Atom("N", 5), new Atom("He", 2), new Atom("N", 5)];
 
 atoms[0].x = 4;
@@ -144,6 +186,11 @@ atoms[3].x = 4;
 atoms[3].y = 5;
 atoms[4].x = 7;
 atoms[4].y = 5;
+
+/*atoms.pop();
+atoms.pop();
+atoms.pop();
+atoms.pop();*/
 
 for(var atom of atoms) {
     atom.checkForBonds(atoms);
