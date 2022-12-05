@@ -1,12 +1,12 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.}
+We developed this software as an educational resource for students in the elementary and middle school age ranges. Students can learn about a variety of chemistry topics on our fun and engaging web app which even includes a switch to toggle to a minecraft theme!
 
-{Provide a description of your team project.  Describe how to use the software.}
+This software has many webpages with different lessons on the history, vocabulary, states, applications, and chemistry bonds. The main feature of our web app displays all the elements on the periodic table and many of the compounds these elements are a part of. 
 
-{If this is an online class, then provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
+To view our web app you must run it in a live server. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+
 
 # Development Environment
 
@@ -34,7 +34,6 @@ We used Javascript combined with HTML and CSS.
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Interactive Periodic Table
+* Enhance Minecraft Features
+* Lewis Structure 
