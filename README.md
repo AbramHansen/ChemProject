@@ -12,7 +12,7 @@ To view our web app you must run it in a live server.
 
 The IDE we used for this software was Visual Studio Code.
 
-We used Javascript combined with HTML and CSS.
+We used Javascript combined with HTML5 and CSS.
 
 # Collaborators
 * Abram Hansen - Configuration Manager
