@@ -122,7 +122,7 @@ async function findElement(e) {
 
   img = document.getElementById("compound-img");
   img.src = element.bohr_model_image;
-  img.style.borderRadius = "15px";
+  // img.style.borderRadius = "15px";
   img.style.boxShadow = "0px 0px 3px #999";
 }
 
