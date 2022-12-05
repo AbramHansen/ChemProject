@@ -2,7 +2,7 @@
 
 We developed this software as an educational resource for students in the elementary and middle school age ranges. Students can learn about a variety of chemistry topics on our fun and engaging web app which even includes a switch to toggle to a Minecraft theme!
 
-This software has many webpages with different lessons on the history, vocabulary, states, applications, and chemistry bonds. The main feature of our web app displays all the elements on the periodic table and many of the compounds these elements are a part of. 
+This software has many webpages with different lessons on the history, vocabulary, states, bonds, and chemistry applications. The main feature of our web app displays all the elements on the periodic table and many of the compounds these elements are a part of. 
 
 To view our web app you must run it in a live server. 
 
