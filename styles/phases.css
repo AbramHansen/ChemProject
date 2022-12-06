@@ -172,7 +172,7 @@
       font-size: 18px;
   }
   
-  #img-left{
+  .img-left{
     grid-column: 1/2;
     /* grid-row: 2/2; */
     margin: 10px;
@@ -182,8 +182,9 @@
     width: 480px ;
     height: 360px;
   }
+
   
-  #img-right{
+  .img-right{
     grid-column: 2/3;
     /* grid-row: 3/3; */
     margin: 10px;
