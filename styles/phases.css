@@ -125,6 +125,10 @@
       display: grid;
       grid-template-columns: 1fr, 1fr, 1fr;
       grid-template-rows: 200px, 1fr, 1fr;
+      margin: auto 10%;
+      padding: auto 5%;
+      background-color: #bff8fc;
+      border: black 4px solid;
       /* height: 850px; */
   
   }
