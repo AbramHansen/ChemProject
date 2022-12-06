@@ -42,8 +42,9 @@ async function findCompound(e) {
   } catch (error) {
     let formulas = compound.chemicalFormula.split("/");
     let names = compound.commonName.split("/ ");
+    let names2 = compound.commonName.split("/");
 
-    let options = formulas.concat(names);
+    let options = formulas.concat(names).concat(names2);
 
     options.forEach(async (option) => {
       let id = await getCompoundCID(option);
@@ -86,7 +87,7 @@ async function getCompoundCID(formula) {
     let data = await response.json();
     return data.IdentifierList.CID[0];
   } else {
-    throw Error();
+    throw Error("Unable to fetch");
   }
 }
 
@@ -98,7 +99,7 @@ async function getCompoundPNG(cid) {
   if (response.ok) {
     img = document.getElementById("compound-img");
     img.src = response.url;
-    img.style.border = "solid 10px saddlebrown";
+    // img.style.border = "solid 10px saddlebrown";
     img.style.boxShadow = "0px 0px 3px #999";
   } else {
     throw Error(await response.text());
