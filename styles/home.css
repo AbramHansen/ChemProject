@@ -47,6 +47,10 @@ align-items: center;
     text-align: center;
 }
 
+.is_hidden {
+    transition: 0.6s;
+}
+
 #mixer {
     grid-row: 2 / -1;
     justify-self: center;
@@ -56,18 +60,25 @@ align-items: center;
 #lessons {
     grid-row: 3/-1;
     justify-self: center;
-    background-color: blue;   
+    background-color: blue;  
+    display: block; 
 }
 
-button {
+#hidden {
+    display: none;
+}
+
+input {
     width: 50%;
     margin: 5px 0 5px 0;
     padding: 5px 0 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #bff8fc;
+    /* transition: 0.6s; */
 }
 
-button:hover {
+input:hover {
     background-color: #b2d8ee;
 }
 

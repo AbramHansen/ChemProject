@@ -30,12 +30,22 @@
     <main>
         <div id="center">
             <h1>Welcome to Molecule Mixer!</h1>
-            <div id="mixer">
-                <button>Mixer</button>
+            <div id="buttons" class="is_hidden">
+                <div id="mixer">
+                    <a href="periodic.html"><input type="button" value="Molecule Mixer" onclick=""></a>
+                </div>
+
+                <div id="lessons">
+                    <input type="button" value="Chemistry Lessons" onclick="toggle()">
+                </div>
             </div>
             
-            <div id="lessons">
-                <button>Chemistry Lessons</button>
+            <div id="hidden">
+                <a href="history.html"><input type="button" value="History" onclick=""></a>
+                <a href="phases.html"><input type="button" value="States" onclick=""></a>
+                <a href="bonds.html"><input type="button" value="Bonds" onclick=""></a>
+                <a href="applications.html"><input type="button" value="Applications" onclick=""></a>
+                <input type="button" value="Back" onclick="toggle()">
             </div>
 
             <p>Something else?</p>
