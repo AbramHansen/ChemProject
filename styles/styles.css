@@ -126,7 +126,6 @@ header a:hover {
 main {
   display: grid;
   grid-template-columns: 200px 1fr 300px;
-
   margin: 10px;
 }
 
@@ -283,10 +282,3 @@ footer {
 
 
 
-/* Katie's CSS for History Page */
-#history-gases {border: solid 5px #2cd342;}
-#history-atomic {border: solid 5px #2cd342;}
-#history-milk {border: solid 5px #2cd342;}
-#history-periodic {border: solid 5px #2cd342;}
-
-/* ----------------------------- */
