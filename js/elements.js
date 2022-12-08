@@ -80,6 +80,8 @@ function appendElements(data) {
 }
 
 async function findElement(e) {
+  document.getElementById("info-title").textContent = "Element Info";
+
   let elements = await getElements();
 
   console.log(e);
@@ -124,6 +126,8 @@ async function findElement(e) {
   img.src = element.bohr_model_image;
   // img.style.borderRadius = "15px";
   img.style.boxShadow = "0px 0px 3px #999";
+  let minecraftMode = document.getElementById("switch").checked;
+  if (minecraftMode) img.style.border = "solid 10px saddlebrown";
 }
 
 loadElements();

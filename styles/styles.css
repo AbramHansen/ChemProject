@@ -36,6 +36,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
+  max-height: 45px;
+  transition: max-height 0.5s;
   /* border-radius: 10px; */
   /* text-align: center; */
 }
@@ -189,6 +192,21 @@ main {
   border-bottom: solid 2px black;
   border-right: solid 2px black;
   /* border-radius: 0 0 10px 0; */
+}
+
+#info-title {
+}
+
+.common-name {
+}
+
+.compound-name {
+}
+
+.chemical-formula {
+}
+
+.uses {
 }
 
 #compound-img {
