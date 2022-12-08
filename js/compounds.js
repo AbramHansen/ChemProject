@@ -28,6 +28,8 @@ function appendCompounds(data) {
 }
 
 async function findCompound(e) {
+  document.getElementById("info-title").textContent = "Compound Info";
+
   let compounds = await getCompounds();
 
   let compound = compounds.find(
@@ -42,8 +44,9 @@ async function findCompound(e) {
   } catch (error) {
     let formulas = compound.chemicalFormula.split("/");
     let names = compound.commonName.split("/ ");
+    let names2 = compound.commonName.split("/");
 
-    let options = formulas.concat(names);
+    let options = formulas.concat(names).concat(names2);
 
     options.forEach(async (option) => {
       let id = await getCompoundCID(option);
@@ -60,9 +63,13 @@ async function findCompound(e) {
 
   let div = document.createElement("div");
   let commonName = document.createElement("h3");
+  commonName.classList.add("common-name");
   let compoundName = document.createElement("p");
+  compoundName.classList.add("compound-name");
   let chemicalFormula = document.createElement("p");
+  chemicalFormula.classList.add("chemical-formula");
   let uses = document.createElement("p");
+  uses.classList.add("uses");
 
   commonName.textContent = compound.commonName;
   compoundName.innerHTML = `<strong>Compound Name</strong><br>${compound.compoundName}`;
@@ -86,7 +93,7 @@ async function getCompoundCID(formula) {
     let data = await response.json();
     return data.IdentifierList.CID[0];
   } else {
-    throw Error();
+    throw Error("Unable to fetch");
   }
 }
 
@@ -98,8 +105,10 @@ async function getCompoundPNG(cid) {
   if (response.ok) {
     img = document.getElementById("compound-img");
     img.src = response.url;
-    img.style.border = "solid 10px saddlebrown";
     img.style.boxShadow = "0px 0px 3px #999";
+
+    let minecraftMode = document.getElementById("switch").checked;
+    if (minecraftMode) img.style.border = "solid 10px saddlebrown";
   } else {
     throw Error(await response.text());
   }

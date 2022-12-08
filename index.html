@@ -4,65 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/compounds.js"></script>
-    <script src="js/elements.js"></script>
+    <link rel="stylesheet" href="styles/home.css" />
+    <!-- <script src="js/compounds.js"></script>
+    <script src="js/elements.js"></script> -->
+    <script defer src="js/home.js"></script>
     <script defer src="js/script.js"></script>
+    <script defer src="js/minecraftModeTracker.js"></script>
     <title>Molecule Mixer</title>
   </head>
 
   <body>
-    <header>
-      <!--
-        Maybe put a banner? - uncomment to add
-        <img class=""banner" alt="banner" src="img.png"/>
-        -->
+    <!-- <header>
       <div>
         <a href="index.html">Home</a>
+        <a href="periodic.html">Elements and Compounds</a>
         <a href="history.html">History</a>
-        <a href="fusion.html">Fusion</a>
-        <a href="phases.html">Phases</a>
+        <a href="fusion.html">Vocabulary</a>
+        <a href="phases.html">States</a>
+        <a href="bonds.html">Bonds</a>
         <a href="applications.html">Applications</a>
       </div>
 
-      <label class="switch">
-        <input id="switch" type="checkbox" />
-        <span class="slider"></span>
-      </label>
-    </header>
+      
+    </header> -->
 
     <main>
-      <div id="elements">
-        <!-- ELEMENTS GO HERE -->
-        <!-- Needs to be at the top fo the page -->
+      <div id="center">
+        <h1>Welcome to Molecule Mixer!</h1>
+        <div id="buttons" class="is_hidden">
+          <div id="mixer">
+            <a href="periodic.html"
+              ><input type="button" value="Molecule Mixer" onclick=""
+            /></a>
+          </div>
 
-        <!-- <div class="element">
-          <p class="number">1</p>
-          <p class="weight">1.0079</p>
-          <p class="symbol">H</p>
-          <p class="name">Hydrogen</p>
-        </div> -->
-      </div>
+          <div id="lessons">
+            <input type="button" value="Chemistry Lessons" />
+          </div>
+        </div>
 
-      <div id="compounds">
-        <!-- COMPOUNDS GO HERE -->
-        <!-- Needs to be on the left of the page -->
-      </div>
+        <div id="hidden">
+          <a href="history.html"
+            ><input type="button" value="History" onclick=""
+          /></a>
+          <a href="phases.html"
+            ><input type="button" value="States" onclick=""
+          /></a>
+          <a href="bonds.html"
+            ><input type="button" value="Bonds" onclick=""
+          /></a>
+          <a href="applications.html"
+            ><input type="button" value="Applications" onclick=""
+          /></a>
+          <input type="button" value="Back" id="back" />
+        </div>
 
-      <div id="pot">
-        <!-- POT/CANVAS GO HERE -->
-        <!-- Needs to be in the center -->
-        <!-- <p>text</p>
-        <canvas id="canvas">
-          <img src="img/Cauldron.jpg" alt="background" />
-        </canvas> -->
-        <img id="compound-img" src="" alt="" />
-      </div>
-
-      <div id="info">
-        <h2>Compound Info</h2>
-        <!-- INFORMATION GO HERE -->
-        <!-- Needs to be on the right of the page -->
+        <p>Something else?</p>
+        <label class="switch">
+          <input id="switch" type="checkbox" />
+          <span class="slider"></span>
+        </label>
       </div>
     </main>
 

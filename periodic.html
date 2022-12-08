@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/compounds.js"></script>
+    <script src="js/elements.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/minecraftModeTracker.js"></script>
+    <title>Molecule Mixer</title>
+  </head>
+
+  <body>
+    <header>
+      <!--
+        Maybe put a banner? - uncomment to add
+        <img class=""banner" alt="banner" src="img.png"/>
+        -->
+      <div>
+        <a href="index.html">Home</a>
+        <a href="periodic.html">Elements and Compounds</a>
+        <a href="history.html">History</a>
+        <a href="phases.html">States</a>
+        <a href="bonds.html">Bonds</a>
+        <a href="applications.html">Applications</a>
+      </div>
+
+      <label class="switch">
+        <input id="switch" type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <main>
+      <div id="elements">
+        <!-- ELEMENTS GO HERE -->
+        <!-- Needs to be at the top fo the page -->
+
+        <!-- <div class="element">
+          <p class="number">1</p>
+          <p class="weight">1.0079</p>
+          <p class="symbol">H</p>
+          <p class="name">Hydrogen</p>
+        </div> -->
+      </div>
+
+      <div id="compounds">
+        <!-- COMPOUNDS GO HERE -->
+        <!-- Needs to be on the left of the page -->
+      </div>
+
+      <div id="pot">
+        <!-- POT/CANVAS GO HERE -->
+        <!-- Needs to be in the center -->
+        <!-- <p>text</p>
+        <canvas id="canvas">
+          <img src="img/Cauldron.jpg" alt="background" />
+        </canvas> -->
+        <img id="compound-img" src="" alt="" />
+      </div>
+
+      <div id="info">
+        <h2 id="info-title"></h2>
+        <!-- INFORMATION GO HERE -->
+        <!-- Needs to be on the right of the page -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Molecule Mixer 2022</p>
+    </footer>
+  </body>
+</html>

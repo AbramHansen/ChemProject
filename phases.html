@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="js/script.js"></script>
-    <script src="js/elements.js"></script>
+    <link rel="stylesheet" href="styles/phases.css" />
+    <script defer src="js/phases.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/minecraftModeTracker.js"></script>
     <title>Molecule Mixer</title>
   </head>
 
@@ -17,48 +18,110 @@
         <img class=""banner" alt="banner" src="img.png"/>
         -->
 
-      <a href="index.html">Home</a>
-      <a href="history.html">History</a>
-      <a href="fusion.html">Fusion</a>
-      <a href="phases.html">Phases</a>
-      <a href="applications.html">Applications</a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="periodic.html">Elements and Compounds</a>
+        <a href="history.html">History</a>
+        <a href="phases.html">States</a>
+        <a href="bonds.html">Bonds</a>
+        <a href="applications.html">Applications</a>
+      </div>
+      <label class="switch">
+        <input id="switch" type="checkbox" />
+        <span class="slider"></span>
+      </label>
     </header>
 
     <main>
-        <div id="paragraph-right">
-            <p>Lorem ipsum dolor sit amet et delectus accommodare his 
-                consul copiosae legendos at vix ad putent delectus 
-                delicata usu. Vidit dissentiet eos cu eum an brute 
-                copiosae hendrerit. Eos erant dolorum an. Per facer 
-                affert ut. Mei iisque mentitum moderatius cu. Sit 
-                munere facilis accusam eu dicat falli consulatu at vis. 
-                Te facilisis mnesarchum qui posse omnium mediocritatem 
-                est cu. Modus argumentum ne qui tation efficiendi in 
-                eos. Ei mea falli legere efficiantur et tollit aliquip 
-                debitis mei. No deserunt mediocritatem mel. Lorem ipsum 
-                dolor sit amet et delectus</p>
-        </div>
+      <h1>States</h1>
+      <h2>States of Matter</h2>
+      <div id="paragraph-full">
+        <p>
+          All matter is comprised of many different stages. These stages, known
+          as states, have their own properties that set them apart from one
+          another. Although there is a considerable amount of different states
+          matter can be in, there are four main fundamental states of matter.
+          The four major states are solid, liquid, gas, and plasma. Most
+          elements will transition from one state to the next in order, however,
+          there are circumstances where elements skip states, jumping to the
+          next one in order. An example of this is dry ice. Dry ice, being a
+          solid, will begin to transition immediately into its gas state once
+          exposed to room temperature conditions.
+        </p>
+      </div>
 
-        <img id="left-img">
+      <h2>Solid</h2>
 
-        <div id="paragraph-left">
-            <p>Lorem ipsum dolor sit amet et delectus accommodare his 
-                consul copiosae legendos at vix ad putent delectus 
-                delicata usu. Vidit dissentiet eos cu eum an brute 
-                copiosae hendrerit. Eos erant dolorum an. Per facer 
-                affert ut. Mei iisque mentitum moderatius cu. Sit 
-                munere facilis accusam eu dicat falli consulatu at vis. 
-                Te facilisis mnesarchum qui posse omnium mediocritatem 
-                est cu. Modus argumentum ne qui tation efficiendi in 
-                eos. Ei mea falli legere efficiantur et tollit aliquip 
-                debitis mei. No deserunt mediocritatem mel. Lorem ipsum 
-                dolor sit amet et delectus</p>
-        </div>
+      <div id="paragraph-right">
+        <p>
+          The most dense state of matter is known as a solid. The molecules in
+          this state are the most packed together compared to that of the other
+          states of matter. Once an element is in its solid state, it does not
+          change shape to fill the space it occupies, unlike the other forms.
+          For most elements, a solid will shift into liquid once it has reached
+          a certain temperature. Increasing the pressure can slightly increase
+          this melting point.
+        </p>
+      </div>
+      <img src="images\phases\Ice.jpg" alt="Ice" class="img-right" id="solid" />
 
-        <img id="left-img">
+      <h2>Liquid</h2>
+      <img
+        src="images\phases\water.jpg"
+        alt="Water"
+        class="img-left"
+        id="liquid"
+      />
+      <div id="paragraph-left">
+        <p>
+          Liquid is the middle child that is sandwiched in between its state
+          siblings of solid and gas. If the temperature of the liquid drops too
+          much, it will freeze into a solid. If the temperature of the liquid
+          gets too hot, then it will begin to boil, turning itself into a gas.
+          Unlike a solid, the liquid state will flow and move around, matching
+          the shape of the container it sits in. The molecules are spread out a
+          bit more than the solid, but still close compare to that of gas. Out
+          of all states of matter, this is the least common form due to its
+          narrow range of temperature and pressure that is required to maintain
+          it.
+        </p>
+      </div>
 
-        <!-- ADD PARAGRAPHS AND IMGAGES AS NEEDED -->
+      <h2>Gas</h2>
+      <div id="paragraph-right">
+        <p>
+          Gas rests comfortably between the liquid and plasma states of matter.
+          Similar to liquid, if a gas becomes too cold or too hot, it will
+          transition over to liquid, if too cold, or to plasma, if too hot. Gas
+          can also be changed into plasma by putting it through a strong
+          electromagnetic field. Gas is significantly less dense than liquid.
+        </p>
+      </div>
+      <img
+        src="images\phases\steam.jpg"
+        alt="Steam"
+        class="img-right"
+        id="gas"
+      />
 
+      <h2>Plasma</h2>
+      <img
+        src="images\phases\sun.jpg"
+        alt="The Sun"
+        class="img-left"
+        id="plasma"
+      />
+      <div id="paragraph-left">
+        <p>
+          Plasma is the most common form of matter in the universe. It is what
+          all stars are made of. Plasma is formed when enough heat is applied to
+          a gas that the electron is stripped away from its atom. This creates a
+          bunch of elections and ions. The most common form of plasma found here
+          on earth is lighting and the Northern Lights.
+        </p>
+      </div>
+
+      <!-- ADD PARAGRAPHS AND IMGAGES AS NEEDED -->
     </main>
 
     <footer>
