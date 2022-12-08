@@ -17,6 +17,7 @@ function switchEvent(e) {
         element.style.backgroundColor = "#777";
         element.style.color = "#fff";
       } else {
+        element.style.color = "black";
         element.style.backgroundColor = "#69C";
       }
     }
@@ -27,6 +28,7 @@ function switchEvent(e) {
         element.style.backgroundColor = "#777";
         element.style.color = "#fff";
       } else {
+        element.style.color = "black";
         element.style.backgroundColor = "#69C";
       }
     }
@@ -37,6 +39,7 @@ function switchEvent(e) {
         element.style.backgroundColor = "#777";
         element.style.color = "#fff";
       } else {
+        element.style.color = "black";
         element.style.backgroundColor = "#69C";
       }
     }
