@@ -32,6 +32,7 @@ function switchEvent(e) {
       } else {
         element.style.color = "black";
         element.style.backgroundColor = "#69C";
+        element.style.backgroundImage = "";
       }
     }
 
