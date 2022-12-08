@@ -8,6 +8,10 @@
   
 }
 
+.selected {
+  background-color:#2cd342;
+}
+
 #main-page {
     background: linear-gradient(to bottom, #ffffff, #89b983, #ffffff);
     margin: auto 10%;

@@ -54,13 +54,13 @@ align-items: center;
 #mixer {
     grid-row: 2 / -1;
     justify-self: center;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #lessons {
     grid-row: 3/-1;
     justify-self: center;
-    background-color: blue;  
+    /* background-color: blue;   */
     display: block; 
 }
 

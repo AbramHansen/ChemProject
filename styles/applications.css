@@ -18,6 +18,10 @@ h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.selected {
+  background-color:#2cd342;
+}
+
 body {
   margin: 0 auto;
   /* font-family: "minecraft-body"; */

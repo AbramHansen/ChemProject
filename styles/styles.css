@@ -122,6 +122,10 @@ header a:hover {
   /* transform: scale(1.5); */
 }
 
+.selected {
+  background-color:#2cd342;
+}
+
 main {
   display: grid;
   grid-template-columns: 200px 1fr 300px;
