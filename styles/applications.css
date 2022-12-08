@@ -51,7 +51,7 @@ header a {
   text-decoration: none;
   font-size: 20px;
   color: black;
-  padding: 20px;
+  padding: 10px;
   transition: 0.2s;
   /* border-left: solid 1px black;
   border-right: solid 1px black; */
@@ -123,7 +123,6 @@ input:checked + .slider:before {
 header a:hover {
   background-color: #2cd342;
   box-shadow: 0px 0px 5px #999;
-  padding: 20px 25px 25px 25px;
   border: solid 1px black;
   /* font-size: 25px; */
   /* border-right: solid 1px black; */

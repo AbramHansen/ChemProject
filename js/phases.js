@@ -41,9 +41,11 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == "main") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.backgroundColor = "#777";
+        element.style.backgroundColor = "";
+        element.style.backgroundImage = 'url("mc-stone2.webp")';
       } else {
         element.style.backgroundColor = "rgb(191, 248, 252)";
+        element.style.backgroundImage = "none";
       }
     }
   }

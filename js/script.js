@@ -25,7 +25,9 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == "#compounds") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.backgroundColor = "#777";
+        // element.style.backgroundColor = "#777";
+        element.style.backgroundColor = "";
+        element.style.backgroundImage = 'url("mc-stone2.webp")';
         element.style.color = "#fff";
       } else {
         element.style.color = "black";
@@ -178,6 +180,18 @@ function switchEvent(e) {
       } else {
         element.style.color = "black";
         element.style.textShadow = "none";
+      }
+    }
+
+    if (document.styleSheets[0].cssRules[i].selectorText == "header a:hover") {
+      let element = document.styleSheets[0].cssRules[i];
+      if (e.target.checked) {
+        element.style.backgroundColor = "";
+        element.style.backgroundImage = 'url("mc-stone2.webp")';
+        // element.style.padding = "10px";
+      } else {
+        element.style.backgroundColor = "#2cd342";
+        element.style.backgroundImage = "none";
       }
     }
 
