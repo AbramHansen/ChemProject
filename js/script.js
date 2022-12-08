@@ -43,7 +43,7 @@ function switchEvent(e) {
         element.style.color = "#fff";
       } else {
         element.style.color = "black";
-        element.style.backgroundColor = "#69C";
+        element.style.backgroundColor = "rgb(45, 210, 65)";
       }
     }
 
