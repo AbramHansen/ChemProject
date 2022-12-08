@@ -1,12 +1,16 @@
 const canvas = document.getElementById("testCanvas");
 const ctx = canvas.getContext("2d");
 
-const CANVAS_WIDTH = canvas.width = 800;
+const CANVAS_WIDTH = canvas.width = 1000;
 const CANVAS_HEIGHT = canvas.height = 600;
 
 const bondingDistance = 80;
 
 canvas.addEventListener("mousemove", e => {
+
+    console.log("X " + e.x)
+    console.log("Y " + e.y)
+
     mouseX = e.x - canvas.getBoundingClientRect().x;
     mouseY = e.y - canvas.getBoundingClientRect().y;
 })
@@ -75,7 +79,6 @@ class Atom {
 
             const startDistance = distanceBetweenBonds * sameAtomBonds / 2;
 
-            console.log("Same atom bonds: " + sameAtomBonds);
             //console.log("Start Distance: " + startDistance);
 
             //ctx.beginPath();
@@ -136,15 +139,12 @@ class Atom {
             }
         }
 
-        if(this.type == 'Na') {console.log(this.numValence - this.bonds.length + " : " + positions);}
-
         var spacingAngle = Math.PI * 2 / positions.length;
         for(var i = 0; i < positions.length; i++) {
             var currentAngle = i * spacingAngle;
             if(positions[i] == 1) {
                 this.drawSingleValence(currentAngle);
             } else if(positions[i] == 2) {
-                console.log("HERE");
                 this.drawSingleValence(currentAngle - Math.PI / 10);
                 this.drawSingleValence(currentAngle + Math.PI / 10);
             }
@@ -180,9 +180,9 @@ function checkForBonds(atoms) {
     }
 }
 
-var atoms = [new Atom("Na", 1), new Atom("Na", 1), new Atom("O", 6), new Atom("N", 5), new Atom("He", 2), new Atom("N", 5), new Atom("H", 1), new Atom("H", 1), new Atom("Cl", 7)];
+var atoms =[];// [new Atom("Na", 1), new Atom("Na", 1), new Atom("O", 6), new Atom("N", 5), new Atom("He", 2), new Atom("N", 5), new Atom("H", 1), new Atom("H", 1), new Atom("Cl", 7)];
 
-atoms[0].x = 40;
+/*atoms[0].x = 40;
 atoms[0].y = 40;
 atoms[1].x = 60;
 atoms[1].y = 40;
@@ -191,12 +191,14 @@ atoms[2].y = 40;
 atoms[3].x = 40;
 atoms[3].y = 60;
 atoms[4].x = 70;
-atoms[4].y = 60;
+atoms[4].y = 60;*/
 
-/*atoms.pop();
-atoms.pop();
-atoms.pop();
-atoms.pop();*/
+function addAtom(type, valence) {
+    atom = new Atom(type, valence);
+    atom.x = 40;
+    atom.y = 40;
+    atoms.push(atom);
+}
 
 function loop() {
     ctx.clearRect(0,0, CANVAS_WIDTH, CANVAS_HEIGHT);

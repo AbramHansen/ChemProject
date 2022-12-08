@@ -38,9 +38,11 @@ async function findCompound(e) {
 
   var cid;
 
+  let div = document.createElement("div");
+
   try {
     cid = await getCompoundCID(compound.chemicalFormula);
-    getCompoundPNG(cid);
+    getCompoundPNG(cid, div);
   } catch (error) {
     let formulas = compound.chemicalFormula.split("/");
     let names = compound.commonName.split("/ ");
@@ -61,7 +63,6 @@ async function findCompound(e) {
     ? infoContainer.removeChild(infoContainer.children[1])
     : "";
 
-  let div = document.createElement("div");
   let commonName = document.createElement("h3");
   commonName.classList.add("common-name");
   let compoundName = document.createElement("p");
@@ -97,15 +98,17 @@ async function getCompoundCID(formula) {
   }
 }
 
-async function getCompoundPNG(cid) {
+async function getCompoundPNG(cid, div) {
   const URL = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/PNG`;
 
   const response = await fetch(URL);
 
   if (response.ok) {
-    img = document.getElementById("compound-img");
+    let img = document.createElement("img");
     img.src = response.url;
     img.style.boxShadow = "0px 0px 3px #999";
+    
+    div.appendChild(img);
 
     let minecraftMode = document.getElementById("switch").checked;
     if (minecraftMode) img.style.border = "solid 10px saddlebrown";
