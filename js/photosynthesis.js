@@ -9,7 +9,7 @@ function switchEvent(e) {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
         element.style.color = "#fff";
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.color = "black";
         element.style.textShadow = "none";

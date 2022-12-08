@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/home.css" />
     <!-- <script src="js/compounds.js"></script>
     <script src="js/elements.js"></script> -->
-    <script src="js/home.js"></script>
+    <script defer src="js/home.js"></script>
     <script defer src="js/script.js"></script>
     <script defer src="js/minecraftModeTracker.js"></script>
     <title>Molecule Mixer</title>
@@ -39,7 +39,7 @@
           </div>
 
           <div id="lessons">
-            <input type="button" value="Chemistry Lessons" onclick="toggle()" />
+            <input type="button" value="Chemistry Lessons" />
           </div>
         </div>
 
@@ -56,7 +56,7 @@
           <a href="applications.html"
             ><input type="button" value="Applications" onclick=""
           /></a>
-          <input type="button" value="Back" onclick="toggle()" />
+          <input type="button" value="Back" id="back" />
         </div>
 
         <p>Something else?</p>

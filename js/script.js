@@ -56,7 +56,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".number") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -65,7 +65,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".weight") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -74,7 +74,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".symbol") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -83,7 +83,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".name") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -92,7 +92,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".compound") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -101,7 +101,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".common-name") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -110,7 +110,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".compound-name") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -121,7 +121,7 @@ function switchEvent(e) {
     ) {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -130,7 +130,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == ".uses") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -139,7 +139,7 @@ function switchEvent(e) {
     if (document.styleSheets[0].cssRules[i].selectorText == "#info-title") {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
-        element.style.textShadow = "2px 2px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.textShadow = "none";
       }
@@ -174,7 +174,7 @@ function switchEvent(e) {
       let element = document.styleSheets[0].cssRules[i];
       if (e.target.checked) {
         element.style.color = "#fff";
-        element.style.textShadow = "3px 3px 0px #555";
+        element.style.textShadow = "2px 2px 0px #333";
       } else {
         element.style.color = "black";
         element.style.textShadow = "none";
