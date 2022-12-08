@@ -23,6 +23,12 @@ function switchEvent(e) {
     ? "background-image: url('images/history/ore-pattern.png');background-size: contain;"
     : "background-image: url('images/history/chem.jpg');";
 
+  headingBackground.style.textShadow = e.target.checked
+    ? "3px 3px 0px black"
+    : "none";
+
+  headingBackground.style.color = e.target.checked ? "#fff" : "black";
+
   mineImage.style = e.target.checked ? "display:block;" : "display:none;";
 
   mineImage.style = e.target.checked ? "display:block;" : "display:none;";

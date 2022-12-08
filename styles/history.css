@@ -1,11 +1,10 @@
 /* Katie's CSS for History Page */
 #mine-img {
-    display:none;
-    margin: auto;
+  display: none;
+  margin: auto;
   margin-left: auto;
   margin-right: auto;
   height: 10%;
-  
 }
 
 .selected {
@@ -13,220 +12,214 @@
 }
 
 #main-page {
-    background: linear-gradient(to bottom, #ffffff, #89b983, #ffffff);
-    margin: auto 10%;
-    padding: auto 5%;
-    border: black 4px solid;
-    
+  background: linear-gradient(to bottom, #ffffff, #89b983, #ffffff);
+  margin: auto 10%;
+  padding: auto 5%;
+  border: black 4px solid;
+  margin-top: 10px;
 }
 #history-gases {
-    border: solid 5px #2cd342;
-    max-height: 200px;
-  }
-  #history-atomic {
-    border: solid 5px #2cd342;
-    max-height: 200px;
-  }
-  #history-milk {
-    border: solid 5px #2cd342;
-    max-height: 200px;
-  }
-  #history-periodic {
-    border: solid 5px #2cd342;
-    max-width:100%;
-    max-height:100%;  
-  }
-  .timeline-item {
-    box-shadow: 0px 0px 3px #999;
-    border:solid 5px #1f932e;
-    padding: 10px 30px;
-    background: linear-gradient(to bottom, #bff8fc, #ffffff, #bff8fc);
-    
-  }
-  #timeline{
-    position: relative;
-    width: 100%;
-    margin: auto;
-  }
-  /*creating line for timeline*/
-  #timeline::after{
-    content: '';
-    position: absolute;
-    width: 10px;
-    background-color: #1f932e;
-    top:0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  /*Adjusting box of all content*/
-  .timeline-item{
-    padding: 10px 40px;
-    position: relative;
-    width:50%;
-    box-sizing: border-box;
-    margin: 50px 0;
-  }
-  .timeline-item::after{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 25px;
-    right: -10px;
-    top:15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  /*for left events*/
-  .left{
-    left: 0;
-  }
-  /*for right events*/
-  .right{
-    left:50%;
-  }
-  .right::after{
-    left:-10px;
-  }
-  #history-heading {
-    font-style: bold;
-    align-self: center;
-    justify-self: center;
-    font-size: 50px;
-    text-align: center;
-    background-image: url("../images/history/chem.jpg");
-    background-color: #ffffff;
-    
- 
+  border: solid 5px #2cd342;
+  max-height: 200px;
+}
+#history-atomic {
+  border: solid 5px #2cd342;
+  max-height: 200px;
+}
+#history-milk {
+  border: solid 5px #2cd342;
+  max-height: 200px;
+}
+#history-periodic {
+  border: solid 5px #2cd342;
+  max-width: 100%;
+  max-height: 100%;
+}
+.timeline-item {
+  box-shadow: 0px 0px 3px #999;
+  border: solid 5px #1f932e;
+  padding: 10px 30px;
+  background: linear-gradient(to bottom, #bff8fc, #ffffff, #bff8fc);
+}
+#timeline {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+/*creating line for timeline*/
+#timeline::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  background-color: #1f932e;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/*Adjusting box of all content*/
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  margin: 50px 0;
+}
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: -10px;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/*for left events*/
+.left {
+  left: 0;
+}
+/*for right events*/
+.right {
+  left: 50%;
+}
+.right::after {
+  left: -10px;
+}
+#history-heading {
+  font-style: bold;
+  align-self: center;
+  justify-self: center;
+  font-size: 50px;
+  text-align: center;
+  background-image: url("../images/history/chem.jpg");
+  background-color: #ffffff;
+  margin-top: 0;
+}
+/* ----------------------------- */
 
-  }
-  /* ----------------------------- */
+/* Main CSS from styles.css */
+footer {
+  background-color: #a7f594;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px;
+  /* border-radius: 10px; */
+}
 
+header a:hover {
+  background-color: #2cd342;
+  box-shadow: 0px 0px 5px #999;
+  border: solid 1px black;
+  /* font-size: 25px; */
+  /* border-right: solid 1px black; */
+  /* transform: scale(1.5); */
+}
 
-  /* Main CSS from styles.css */
-  footer {
-    background-color: #a7f594;
-    text-align: center;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px;
-    /* border-radius: 10px; */
-  }
+@font-face {
+  font-family: minecraft-heading;
+  src: url(Minercraftory.ttf);
+}
 
-  header a:hover {
-    background-color: #2cd342;
-    box-shadow: 0px 0px 5px #999;
-    padding: 20px 25px 25px 25px;
-    border: solid 1px black;
-    /* font-size: 25px; */
-    /* border-right: solid 1px black; */
-    /* transform: scale(1.5); */
-  }
+@font-face {
+  font-family: minecraft-body;
+  src: url(Minecraft.ttf);
+}
 
-  @font-face {
-    font-family: minecraft-heading;
-    src: url(Minercraftory.ttf);
-  }
-  
-  @font-face {
-    font-family: minecraft-body;
-    src: url(Minecraft.ttf);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    /* font-family: "minecraft-heading"; */
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
-  
-  body {
-    margin: 0 auto;
-    /* font-family: "minecraft-body"; */
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    height: 85vh;
-    /* margin: 10px; */
-  }
-  
-  header {
-    box-shadow: 0px 0px 2px #999;
-    background-color: #a7f594;
-    padding: 20px;
-    /* margin-bottom: 12px; */
-    /* border: solid 1px black; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border-radius: 10px; */
-    /* text-align: center; */
-  }
-  
-  header a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    padding: 20px;
-    transition: 0.2s;
-    /* border-left: solid 1px black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "minecraft-heading"; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  /* font-family: "minecraft-body"; */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  height: 85vh;
+  /* margin: 10px; */
+}
+
+header {
+  box-shadow: 0px 0px 2px #999;
+  background-color: #a7f594;
+  padding: 20px;
+  /* margin-bottom: 12px; */
+  /* border: solid 1px black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-radius: 10px; */
+  /* text-align: center; */
+}
+
+header a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  transition: 0.2s;
+  /* border-left: solid 1px black;
     border-right: solid 1px black; */
-  }
-  
-  /* The switch - the box around the slider */
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #333;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #333;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #333;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #333;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
