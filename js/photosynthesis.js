@@ -1,5 +1,6 @@
 document.getElementById("switch").addEventListener("change", switchEvent);
 
+// Change style and images when minecraft switch is selected.
 function switchEvent(e) {
   for (let i = 0; i < document.styleSheets[0].cssRules.length; i++) {
     if (

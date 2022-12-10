@@ -1,3 +1,7 @@
+// Track in local storage whether minecraft mode
+// is enable or disabled so that the them will
+// perpetuate as the user switches between
+// pages.
 if (localStorage.getItem("minecraftMode")) {
   let toggle = document.getElementById("switch");
   localStorage.getItem("minecraftMode") == 1

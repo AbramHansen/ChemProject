@@ -1,6 +1,7 @@
 document.getElementById("lessons").addEventListener("click", toggle);
 document.getElementById("back").addEventListener("click", toggle);
 
+// Show/hide lesson pages when button is clicked.
 function toggle() {
   console.log("Triggered");
 
