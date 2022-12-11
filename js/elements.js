@@ -1,5 +1,6 @@
 const box = document.querySelector("#elementInfo");
 
+// Add get container for elements.
 const elementbox = document.querySelector("#Element");
 
 // Fetches the Elements.json file
@@ -30,11 +31,14 @@ const elementbox = document.querySelector("#Element");
 
 //will finish later
 
+// Load elements from json and call function to
+// append them to the dom.
 async function loadElements() {
   let elements = await getElements();
   appendElements(elements);
 }
 
+// Get elements from the json.
 async function getElements() {
   let response = await fetch("js/elements.json");
 
@@ -47,6 +51,7 @@ async function getElements() {
   }
 }
 
+// Append elements to the dom.
 function appendElements(data) {
   let elementsContainer = document.getElementById("elements");
 
@@ -79,6 +84,9 @@ function appendElements(data) {
   });
 }
 
+// When an element is clicked get the data out of the
+// json and append the data to the info section and
+// the image to the pot.
 async function findElement(e) {
   document.getElementById("info-title").textContent = "Element Info";
 

@@ -1,8 +1,10 @@
+// Load compounds json file and call append compounds.
 async function loadCompounds() {
   let compounds = await getCompounds();
   appendCompounds(compounds);
 }
 
+// Load compounds json file.
 async function getCompounds() {
   let response = await fetch("js/chemical_compounds.json");
 
@@ -14,6 +16,7 @@ async function getCompounds() {
   }
 }
 
+// Appned compounds to dom.
 function appendCompounds(data) {
   let compoundsContainer = document.getElementById("compounds");
 
@@ -27,6 +30,8 @@ function appendCompounds(data) {
   });
 }
 
+// When a compound is clicked, find the data in the json file
+// and get the png of the compound from the API.
 async function findCompound(e) {
   document.getElementById("info-title").textContent = "Compound Info";
 
@@ -84,6 +89,7 @@ async function findCompound(e) {
   infoContainer.appendChild(div);
 }
 
+// Get the compound cid from the API.
 async function getCompoundCID(formula) {
   const URL = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${formula}/cids/JSON`;
 
@@ -97,6 +103,7 @@ async function getCompoundCID(formula) {
   }
 }
 
+// Get the compound image.
 async function getCompoundPNG(cid) {
   const URL = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/PNG`;
 
@@ -114,4 +121,5 @@ async function getCompoundPNG(cid) {
   }
 }
 
+// Call the loadCompounds function on load.
 loadCompounds();
