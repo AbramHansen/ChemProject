@@ -2,17 +2,12 @@
 
 We developed this software as an educational resource for students in the elementary and middle school age ranges. Students can learn about a variety of chemistry topics on our fun and engaging web app which even includes a switch to toggle to a Minecraft theme!
 
-This software has many webpages with different lessons on the history, vocabulary, states, bonds, and chemistry applications. The main feature of our web app displays all the elements on the periodic table and many of the compounds these elements are a part of. 
+This software has many webpages with different lessons on the history, vocabulary, states, and chemistry applications. The main feature of our web app displays all the elements on the periodic table and many of the compounds these elements are a part of. There is also an in-progress interactive lewis chart element. 
 
-To view our web app you must run it in a live server. 
+To view our web app you must run it in a live server.
 
-
-
-# Development Environment
-
-The IDE we used for this software was Visual Studio Code.
-
-We used Javascript combined with HTML5 and CSS.
+# Development
+Developed in Visual Studio Code using web technologies.
 
 # Collaborators
 * Abram Hansen - Configuration Manager
@@ -24,16 +19,11 @@ We used Javascript combined with HTML5 and CSS.
 
 
 # Useful Websites
-
 * [Trello Board](https://trello.com/invite/b/C1aJ9Kuv/4b2be3d1dc7588c7ca4810c210b640b2/brain-matter-workspace)
 * [First Draft Wireframe](https://wireframe.cc/f51zs4)
 * [Final Wireframe](https://wireframe.cc/jxJ7qb)
 * [Source of API](https://pubchem.ncbi.nlm.nih.gov/)
 * [National Geographic](https://www.nationalgeographic.com/)
-* [Design Inspiration](https://www.minecraft.net/)
 
 # Future Work
-
 * Interactive Periodic Table
-* Enhance Minecraft Features
-* Lewis Structure 
