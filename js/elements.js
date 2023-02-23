@@ -1,6 +1,5 @@
 const box = document.querySelector("#elementInfo");
 
-// Add get container for elements.
 const elementbox = document.querySelector("#Element");
 
 // Fetches the Elements.json file
@@ -31,14 +30,11 @@ const elementbox = document.querySelector("#Element");
 
 //will finish later
 
-// Load elements from json and call function to
-// append them to the dom.
 async function loadElements() {
   let elements = await getElements();
   appendElements(elements);
 }
 
-// Get elements from the json.
 async function getElements() {
   let response = await fetch("js/elements.json");
 
@@ -51,7 +47,6 @@ async function getElements() {
   }
 }
 
-// Append elements to the dom.
 function appendElements(data) {
   let elementsContainer = document.getElementById("elements");
 
@@ -84,9 +79,6 @@ function appendElements(data) {
   });
 }
 
-// When an element is clicked get the data out of the
-// json and append the data to the info section and
-// the image to the pot.
 async function findElement(e) {
   document.getElementById("info-title").textContent = "Element Info";
 
@@ -117,25 +109,31 @@ async function findElement(e) {
   let elementName = document.createElement("p");
   let chemicalFormula = document.createElement("p");
   let uses = document.createElement("p");
+  let addButton = document.createElement("button");
+  let compoundImg = document.createElement("img");
 
   commonName.textContent = element.nameame;
   elementName.innerHTML = `<strong>Element Name</strong><br>${element.name}`;
   chemicalFormula.innerHTML = `<strong>Symbol</strong><br> ${element.symbol}`;
   uses.innerHTML = `<strong>Summary</strong><br>${element.summary}`;
+  compoundImg.src = element.bohr_model_image;
+  compoundImg.style.boxShadow = "0px 0px 3px #999";
+  let minecraftMode = document.getElementById("switch").checked;
+  if (minecraftMode) compoundImg.style.border = "solid 10px saddlebrown";
+
+  addButton.innerHTML = "Add to Pot";
+  addButton.onclick = function() {
+    addAtom(element.symbol, element.shells[element.shells.length - 1]);
+  };
 
   div.appendChild(commonName);
   div.appendChild(elementName);
   div.appendChild(chemicalFormula);
   div.appendChild(uses);
+  div.appendChild(compoundImg);
+  div.appendChild(addButton);
 
   infoContainer.appendChild(div);
-
-  img = document.getElementById("compound-img");
-  img.src = element.bohr_model_image;
-  // img.style.borderRadius = "15px";
-  img.style.boxShadow = "0px 0px 3px #999";
-  let minecraftMode = document.getElementById("switch").checked;
-  if (minecraftMode) img.style.border = "solid 10px saddlebrown";
 }
 
 loadElements();

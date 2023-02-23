@@ -1,10 +1,8 @@
-// Load compounds json file and call append compounds.
 async function loadCompounds() {
   let compounds = await getCompounds();
   appendCompounds(compounds);
 }
 
-// Load compounds json file.
 async function getCompounds() {
   let response = await fetch("js/chemical_compounds.json");
 
@@ -16,7 +14,6 @@ async function getCompounds() {
   }
 }
 
-// Appned compounds to dom.
 function appendCompounds(data) {
   let compoundsContainer = document.getElementById("compounds");
 
@@ -30,8 +27,6 @@ function appendCompounds(data) {
   });
 }
 
-// When a compound is clicked, find the data in the json file
-// and get the png of the compound from the API.
 async function findCompound(e) {
   document.getElementById("info-title").textContent = "Compound Info";
 
@@ -43,9 +38,11 @@ async function findCompound(e) {
 
   var cid;
 
+  let div = document.createElement("div");
+
   try {
     cid = await getCompoundCID(compound.chemicalFormula);
-    getCompoundPNG(cid);
+    getCompoundPNG(cid, div);
   } catch (error) {
     let formulas = compound.chemicalFormula.split("/");
     let names = compound.commonName.split("/ ");
@@ -66,7 +63,6 @@ async function findCompound(e) {
     ? infoContainer.removeChild(infoContainer.children[1])
     : "";
 
-  let div = document.createElement("div");
   let commonName = document.createElement("h3");
   commonName.classList.add("common-name");
   let compoundName = document.createElement("p");
@@ -89,7 +85,6 @@ async function findCompound(e) {
   infoContainer.appendChild(div);
 }
 
-// Get the compound cid from the API.
 async function getCompoundCID(formula) {
   const URL = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/${formula}/cids/JSON`;
 
@@ -103,16 +98,17 @@ async function getCompoundCID(formula) {
   }
 }
 
-// Get the compound image.
-async function getCompoundPNG(cid) {
+async function getCompoundPNG(cid, div) {
   const URL = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/${cid}/PNG`;
 
   const response = await fetch(URL);
 
   if (response.ok) {
-    img = document.getElementById("compound-img");
+    let img = document.createElement("img");
     img.src = response.url;
     img.style.boxShadow = "0px 0px 3px #999";
+    
+    div.appendChild(img);
 
     let minecraftMode = document.getElementById("switch").checked;
     if (minecraftMode) img.style.border = "solid 10px saddlebrown";
@@ -121,5 +117,4 @@ async function getCompoundPNG(cid) {
   }
 }
 
-// Call the loadCompounds function on load.
 loadCompounds();
